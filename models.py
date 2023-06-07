@@ -52,7 +52,7 @@ async def get_bill_for_all_owners():
         bills.append(await get_bill_for_owner(owner))
     return bills
 
-if __name__ == "__models__":
+if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=80000)
    
